@@ -1,8 +1,9 @@
 import logo from "./logo.svg";
 import "./App.css";
-
+// import Car from "./Car";
+import Xe from "./Xe";
 function App() {
-  return (
+  const html = (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -17,9 +18,12 @@ function App() {
         >
           Learn React - Hello World !
         </a>
+        <Xe color="red" value123="Tôi là xe màu đỏ" />
+        <Xe color="blue" value="Tôi là xe màu xanh" />
       </header>
     </div>
   );
+  return html;
 }
 
 export default App;
